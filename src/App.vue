@@ -1,18 +1,23 @@
 <template>
   <div>
     <home></home>
+    <appFooter></appFooter>
   </div>
 </template>
 
 <script>
+
 import home from './components/home'
+import appFooter from './components/footer'
 
 export default {
-  name: 'app',
   components: {
-    home
+    home,
+    appFooter
   }
+
 }
+
 </script>
 
 <style lang="sass">
@@ -22,6 +27,6 @@ export default {
     box-sizing: border-box
 
   ul
-    list-style: none    
+    list-style: none
 
 </style>

@@ -10,7 +10,7 @@
             <button type="button" @click="removeName(personName['.key'])">Remove</button>
             <button type="button" @click="setEditName(personName['.key'])">Edit</button>
           </div>
-          <div v-else="personName.edit">
+          <div v-else>
             <input type="text" v-model="personName.name">
             <button type="button" @click="saveName(personName)">Save</button>
             <button type="button" @click="cancelEdit(personName['.key'])">Cancel</button>
